@@ -1,0 +1,32 @@
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+if abs(x1 - x2) <= 1 and abs(y1 - y2) <= 1:
+    print("YES")
+else:
+    print("NO")
+
+
+a = int(input())
+b = int(input())
+c = int(input())
+if a == b == c and a == c == b:
+    print("Разносторонний")
+elif a == b == c:
+    print("Равносторонний")
+else:
+    print("Равнобедренный")
+    
+    
+    
+a1=int(input())
+b1=int(input())
+a2=int(input())
+b2=int(input())
+if min(b1,b2) < max(a1,a2):
+    print('Пустое множество')
+elif min(b1,b2) == max(a1,a2):
+    print(min(b1,b2))
+else:
+    print(max(a1,a2), min(b1,b2))
